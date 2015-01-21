@@ -9,7 +9,7 @@ Tired to use another plugins, I just want to make this thing a little more fast 
 Using jQuery to make this, the click in a option get the attribute 'data-value' of the item and set to a hidden input to work normal inside a form tag :D.
 Works with multiple custom selects.
 
-
+<code>
 <div class="select-content">
 	<div class="field-you-want select-oper">Select a option</div>
 	<div class="dropdown-select-custom">
@@ -21,3 +21,4 @@ Works with multiple custom selects.
 	</div>
 	<input type="hidden" name="field-name" class="field-name default-input">
 </div>
+</code>
