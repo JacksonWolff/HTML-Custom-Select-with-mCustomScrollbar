@@ -23,3 +23,6 @@ Works with multiple custom selects.
 	<input type="hidden" name="field-name" class="field-name default-input">
 </div> 
 ```
+
+You can see it running here:
+http://jacksonwolff.com.br/git/HTML-Custom-Select-with-mCustomScrollbar/custom-select.html
