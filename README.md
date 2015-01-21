@@ -11,15 +11,15 @@ Works with multiple custom selects.
 
 ```html
 <h2>Example of code</h2>
-   <div class="select-content">
-		<div class="field-you-want select-oper">Select a option</div>
-		<div class="dropdown-select-custom">
-			<p data-value="1">Option 1</p>
-			<p data-value="2">Option 2</p>
-			<p data-value="3">Option 3</p>
-			<p data-value="4">Option 4</p>
-			<p data-value="5">Option 5</p>						
-		</div>
-		<input type="hidden" name="field-name" class="field-name default-input">
-	</div> 
+<div class="select-content">
+	<div class="field-you-want select-oper">Select a option</div>
+	<div class="dropdown-select-custom">
+		<p data-value="1">Option 1</p>
+		<p data-value="2">Option 2</p>
+		<p data-value="3">Option 3</p>
+		<p data-value="4">Option 4</p>
+		<p data-value="5">Option 5</p>						
+	</div>
+	<input type="hidden" name="field-name" class="field-name default-input">
+</div> 
 ```
