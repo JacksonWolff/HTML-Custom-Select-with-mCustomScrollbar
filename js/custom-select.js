@@ -2,7 +2,7 @@
 	jQuery('body').on('click', '.select-oper', function(event) {
 		event.preventDefault();
 		jQuery(this).next('.dropdown-select-custom').css('top', jQuery(this).position().top + jQuery(this).height() + 4);
-		jQuery(this).next('.dropdown-select-custom').width(jQuery(this).width() + 10)
+		jQuery(this).next('.dropdown-select-custom').width(jQuery(this).width() + parseInt($('.select-oper').css('padding-left')) + parseInt($('.select-oper').css('padding-right')))
 		jQuery(this).next('.dropdown-select-custom').slideDown('fast').addClass('open');
 	});
 
