@@ -1,8 +1,15 @@
 	/*Handler of select click*/
 	jQuery('body').on('click', '.select-oper', function(event) {
 		event.preventDefault();
-		jQuery(this).next('.dropdown-select-custom').css('top', jQuery(this).position().top + jQuery(this).height() + 4);
-		jQuery(this).next('.dropdown-select-custom').width(jQuery(this).width() + parseInt($('.select-oper').css('padding-left')) + parseInt($('.select-oper').css('padding-right')))
+		var offsetTop = 4;
+		var dropWidth = jQuery(this).width() +
+		 				parseInt($('.select-oper').css('padding-left')) +
+		 				parseInt($('.select-oper').css('padding-right')) -
+		 				parseInt($('.dropdown-select-custom').css('border-left')) -
+		 				parseInt($('.dropdown-select-custom').css('border-right'));	
+
+		jQuery(this).next('.dropdown-select-custom').css('top', jQuery(this).position().top + parseInt(jQuery(this).css('height')) + offsetTop);
+		jQuery(this).next('.dropdown-select-custom').width(dropWidth)
 		jQuery(this).next('.dropdown-select-custom').slideDown('fast').addClass('open');
 	});
 
