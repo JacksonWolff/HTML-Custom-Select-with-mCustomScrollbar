@@ -11,8 +11,6 @@ Works with multiple custom selects.
 
 ```html
 <h2>Example of code</h2>
-
-<pre>
    <div class="select-content">
 		<div class="field-you-want select-oper">Select a option</div>
 		<div class="dropdown-select-custom">
@@ -24,5 +22,4 @@ Works with multiple custom selects.
 		</div>
 		<input type="hidden" name="field-name" class="field-name default-input">
 	</div> 
-</pre>
 ```
