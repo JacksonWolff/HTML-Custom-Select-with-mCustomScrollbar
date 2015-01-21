@@ -9,16 +9,20 @@ Tired to use another plugins, I just want to make this thing a little more fast 
 Using jQuery to make this, the click in a option get the attribute 'data-value' of the item and set to a hidden input to work normal inside a form tag :D.
 Works with multiple custom selects.
 
-<code>
-<div class="select-content">
-	<div class="field-you-want select-oper">Select a option</div>
-	<div class="dropdown-select-custom">
-		<p data-value="1">Option 1</p>
-		<p data-value="2">Option 2</p>
-		<p data-value="3">Option 3</p>
-		<p data-value="4">Option 4</p>
-		<p data-value="5">Option 5</p>						
-	</div>
-	<input type="hidden" name="field-name" class="field-name default-input">
-</div>
-</code>
+```html
+<h2>Example of code</h2>
+
+<pre>
+   <div class="select-content">
+		<div class="field-you-want select-oper">Select a option</div>
+		<div class="dropdown-select-custom">
+			<p data-value="1">Option 1</p>
+			<p data-value="2">Option 2</p>
+			<p data-value="3">Option 3</p>
+			<p data-value="4">Option 4</p>
+			<p data-value="5">Option 5</p>						
+		</div>
+		<input type="hidden" name="field-name" class="field-name default-input">
+	</div> 
+</pre>
+```
