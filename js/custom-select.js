@@ -8,9 +8,13 @@
 		 				parseInt($('.dropdown-select-custom').css('border-left')) -
 		 				parseInt($('.dropdown-select-custom').css('border-right'));	
 
-		jQuery(this).next('.dropdown-select-custom').css('top', jQuery(this).position().top + parseInt(jQuery(this).css('height')) + offsetTop);
-		jQuery(this).next('.dropdown-select-custom').width(dropWidth)
-		jQuery(this).next('.dropdown-select-custom').slideDown('fast').addClass('open');
+		if(!jQuery(this).next('.dropdown-select-custom').hasClass('open')){
+			jQuery(this).next('.dropdown-select-custom').css('top', jQuery(this).position().top + parseInt(jQuery(this).css('height')) + offsetTop);
+			jQuery(this).next('.dropdown-select-custom').width(dropWidth)
+			jQuery(this).next('.dropdown-select-custom').slideDown('fast').addClass('open');
+		}else {
+			jQuery(this).next('.dropdown-select-custom').slideUp('fast').removeClass('open');
+		}
 	});
 
 	/* Handler of options click */
